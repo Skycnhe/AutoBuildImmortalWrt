@@ -119,6 +119,7 @@ jobs:
           files: |
             ${{ github.workspace }}/*.qcow2 
             ${{ github.workspace }}/*.vmdk
+            ${{ github.workspace }}/*rootfs.tar.gz
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
